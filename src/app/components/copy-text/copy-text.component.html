@@ -1,21 +1,25 @@
 <div class="container">
-  <div class="row justify-content-center">
-    <div class="col-10">
       <h3>Click on This Button to copy text</h3>
       <div class="input-grup">
-        <input type="text" class="form-control" [(ngModel)]="text1" placeholder="Content to be copied">
-        <span class="input-group-append">
-          <button
-            class="btn btn-default"
-            type="button"
-            ngxClipboard
-            [cbContent]="text1"
-            (cbOnSuccess)="isCopied1 = true"
-            (cbOnError)="onCopyFailure()"
-            [class.btn-success]="isCopied1"
-          >Copy</button>
-        </span>
+        <mat-form-field>
+          <mat-label>Text</mat-label>
+          <input
+            matInput
+            [(ngModel)]="text1"
+            placeholder="Content to be copied"
+          >
+        </mat-form-field>
+
+        <button
+          mat-raised-button
+          color="primary"
+          type="button"
+          ngxClipboard
+          [cbContent]="text1"
+          (cbOnSuccess)="isCopied1 = true"
+          (cbOnError)="onCopyFailure()"
+          [class.btn-success]="isCopied1"
+        >Copy</button>
+
       </div>
-    </div>
-  </div>
 </div>
