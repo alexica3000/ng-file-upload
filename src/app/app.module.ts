@@ -8,11 +8,13 @@ import {AngularMaterialModule} from './angular-material/angular-material.module'
 import {FormsModule} from '@angular/forms';
 import {ClipboardModule} from 'ngx-clipboard';
 import { CopyTextComponent } from './components/copy-text/copy-text.component';
+import { FileUploadComponent } from './components/file-upload/file-upload.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    CopyTextComponent
+    CopyTextComponent,
+    FileUploadComponent
   ],
   imports: [
     BrowserModule,
