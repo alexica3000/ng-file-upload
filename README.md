@@ -1,5 +1,5 @@
-# Angular file upload
-Angular file upload example
+# Angular file upload & copy text
+Angular file upload example & copy text
 
 ## Development server
 
